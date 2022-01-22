@@ -1,86 +1,445 @@
-*
+@media only screen and (max-width: 600px)
 {
-    box-sizing: border-box;
+    *
+    {
+        box-sizing: border-box;
+    }
+    body
+    {
+        background: rgb(0,49,66);
+        background-size: contain;
+        font-family: Corbel, Helvetica, sans-serif;
+        text-align: center;
+    }
+    .login_card
+    {
+        background-color: transparent;
+        height: 5.5in;
+        width: 6.8in;
+    }
+    .blue
+    {
+        color: white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-size: auto 100%;
+        text-align: center;
+        height: inherit;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+    #gradie
+    {
+        font-weight: bolder;
+        margin-bottom: 5px;
+        font-size: 100px;
+        padding-top: 10px;
+    }
+    #gradient
+    {
+        font-family: Corbel light, Corbel, Helvetica, sans-serif;
+        font-size: 40px;
+    }
+    .white
+    {
+        background-color: white;
+        width: 100%;
+        position:fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 50px;
+        padding-top: 5px;
+        text-align: left;
+    }
+    input
+    {
+        width: 100%;
+        padding: 13px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(0,49,66);
+        border-radius: 4px;
+        font-family: Corbel, Helvetica, sans-serif;
+        font-size: medium;
+    }
+    #login
+    {
+        font-weight: bolder;
+        margin-bottom: 12px;
+        font-size: xx-large;
+    }
+    #email_address, #p_word
+    {
+        font-weight: bold;
+        font-size: medium;
+    }
+    #submit_btn
+    {
+        border: transparent;
+        background-color:rgb(0,49,66);
+        color: white;
+    }
 }
-body
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
 {
-    background-attachment: fixed;
-    background-image: url(Assets/Background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Corbel, Helvetica, sans-serif;
+    *
+    {
+        box-sizing: border-box;
+    }
+    body
+    {
+        background-attachment: fixed;
+        background-image: url(Assets/Background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Corbel, Helvetica, sans-serif;
+    }
+    .login_card
+    {
+        background-color: transparent;
+        height: 5.5in;
+        width: 6.8in;
+    }
+    .blue
+    {
+        color: white;
+        /* border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px; */
+        background: rgb(0,49,66) url(Assets/iPhoneMockup.png) no-repeat bottom center;
+        background-size: auto 100%;
+        text-align: center;
+        width: 60%;
+        height: inherit;
+    }
+    #gradie
+    {
+        font-weight: bolder;
+        margin-bottom: 5px;
+        font-size: xx-large;
+        padding-top: 40px;
+    }
+    #gradient
+    {
+        font-family: Corbel light, Corbel, Helvetica, sans-serif;
+    }
+    .white
+    {
+        background-color: white;
+        border: 1px solid rgb(153, 152, 152);
+        /* border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px; */
+        width: 60%;
+        padding: 50px;
+        padding-top: 5px;
+    }
+    input
+    {
+        width: 100%;
+        padding: 13px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(0,49,66);
+        border-radius: 4px;
+        font-family: Corbel, Helvetica, sans-serif;
+        font-size: medium;
+    }
+    #login
+    {
+        font-weight: bolder;
+        margin-bottom: 12px;
+        font-size: xx-large;
+    }
+    #email_address, #p_word
+    {
+        font-weight: bold;
+        font-size: medium;
+    }
+    #submit_btn
+    {
+        border: transparent;
+        background-color:rgb(0,49,66);
+        color: white;
+    }
 }
-.login_card
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
 {
-    background-color: transparent;
-    height: 4.38in;
-    width: 8in;
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    *
+    {
+        box-sizing: border-box;
+    }
+    body
+    {
+        background-attachment: fixed;
+        background-image: url(Assets/Background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Corbel, Helvetica, sans-serif;
+    }
+    .login_card
+    {
+        background-color: transparent;
+        height: 4.8in;
+        width: 6.8in;
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .blue
+    {
+        color: white;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background: rgb(0,49,66) url(Assets/iPhoneMockup.png) no-repeat bottom center;
+        background-size: auto 100%;
+        text-align: center;
+        width: 50%;
+        height: inherit;
+        float: left;
+    }
+    #gradie
+    {
+        font-weight: bolder;
+        margin-bottom: 5px;
+        font-size: xx-large;
+        padding-top: 40px;
+    }
+    #gradient
+    {
+        font-family: Corbel light, Corbel, Helvetica, sans-serif;
+    }
+    .white
+    {
+        background-color: white;
+        border: 1px solid rgb(153, 152, 152);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 50%;
+        height: inherit;
+        float: right;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    input
+    {
+        width: 100%;
+        padding: 13px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(0,49,66);
+        border-radius: 4px;
+        font-family: Corbel, Helvetica, sans-serif;
+        font-size: medium;
+    }
+    #login
+    {
+        font-weight: bolder;
+        margin-bottom: 12px;
+        font-size: xx-large;
+        padding-top: 5px;
+    }
+    #email_address, #p_word
+    {
+        font-weight: bold;
+        font-size: medium;
+    }
+    #submit_btn
+    {
+        border: transparent;
+        background-color:rgb(0,49,66);
+        color: white;
+    }
 }
-.blue
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
 {
-    color: white;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    background: rgb(0,49,66) url(Assets/iPhoneMockup.png) no-repeat bottom center;
-    background-size: auto 100%;
-    text-align: center;
-    width: 50%;
-    height: inherit;
-    float: left;
+    *
+    {
+        box-sizing: border-box;
+    }
+    body
+    {
+        background-attachment: fixed;
+        background-image: url(Assets/Background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Corbel, Helvetica, sans-serif;
+    }
+    .login_card
+    {
+        background-color: transparent;
+        height: 4.38in;
+        width: 8in;
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .blue
+    {
+        color: white;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background: rgb(0,49,66) url(Assets/iPhoneMockup.png) no-repeat bottom center;
+        background-size: auto 100%;
+        text-align: center;
+        width: 50%;
+        height: inherit;
+        float: left;
+    }
+    #gradie
+    {
+        font-weight: bolder;
+        margin-bottom: 5px;
+        font-size: xx-large;
+        padding-top: 50px;
+    }
+    #gradient
+    {
+        font-family: Corbel light, Corbel, Helvetica, sans-serif;
+    }
+    .white
+    {
+        background-color: white;
+        border: 1px solid rgb(153, 152, 152);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 50%;
+        height: inherit;
+        float: right;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    input
+    {
+        width: 100%;
+        padding: 13px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(0,49,66);
+        border-radius: 4px;
+        font-family: Corbel, Helvetica, sans-serif;
+        font-size: medium;
+    }
+    #login
+    {
+        font-weight: bolder;
+        margin-bottom: 12px;
+        font-size: xx-large;
+        padding-top: 15px;
+    }
+    #email_address, #p_word
+    {
+        font-weight: bold;
+        font-size: medium;
+    }
+    #submit_btn
+    {
+        border: transparent;
+        background-color:rgb(0,49,66);
+        color: white;
+    }
 }
-#gradie
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
 {
-    font-weight: bolder;
-    margin-bottom: 5px;
-    font-size: xx-large;
-    padding-top: 50px;
-}
-#gradient
-{
-    font-family: Corbel light, Corbel, Helvetica, sans-serif;
-}
-.white
-{
-    background-color: white;
-    border: 1px solid rgb(153, 152, 152);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    width: 50%;
-    height: inherit;
-    float: right;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-input
-{
-    width: 100%;
-    padding: 13px;
-    margin-top: 5px;
-    border: 1px solid rgb(0,49,66);
-    border-radius: 4px;
-    font-family: Corbel, Helvetica, sans-serif;
-    font-size: medium;
-}
-#login
-{
-    font-weight: bolder;
-    margin-bottom: 15px;
-    font-size: xx-large;
-    padding-top: 20px;
-}
-#email_address, #p_word
-{
-    font-weight: bold;
-    font-size: medium;
-}
-#submit_btn
-{
-    border: transparent;
-    background-color:rgb(0,49,66);
-    color: white;
+    *
+    {
+        box-sizing: border-box;
+    }
+    body
+    {
+        background-attachment: fixed;
+        background-image: url(Assets/Background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Corbel, Helvetica, sans-serif;
+    }
+    .login_card
+    {
+        background-color: transparent;
+        height: 4.38in;
+        width: 8in;
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .blue
+    {
+        color: white;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background: rgb(0,49,66) url(Assets/iPhoneMockup.png) no-repeat bottom center;
+        background-size: auto 100%;
+        text-align: center;
+        width: 50%;
+        height: inherit;
+        float: left;
+    }
+    #gradie
+    {
+        font-weight: bolder;
+        margin-bottom: 5px;
+        font-size: xx-large;
+        padding-top: 50px;
+    }
+    #gradient
+    {
+        font-family: Corbel light, Corbel, Helvetica, sans-serif;
+    }
+    .white
+    {
+        background-color: white;
+        border: 1px solid rgb(153, 152, 152);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 50%;
+        height: inherit;
+        float: right;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    input
+    {
+        width: 100%;
+        padding: 13px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(0,49,66);
+        border-radius: 4px;
+        font-family: Corbel, Helvetica, sans-serif;
+        font-size: medium;
+    }
+    #login
+    {
+        font-weight: bolder;
+        margin-bottom: 12px;
+        font-size: xx-large;
+        padding-top: 15px;
+    }
+    #email_address, #p_word
+    {
+        font-weight: bold;
+        font-size: medium;
+    }
+    #submit_btn
+    {
+        border: transparent;
+        background-color:rgb(0,49,66);
+        color: white;
+    }
 }
