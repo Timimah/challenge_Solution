@@ -24,7 +24,7 @@
         border-top-right-radius: 5px;
         background-size: auto 100%;
         text-align: center;
-        height: inherit;
+        height: 50%;
         width: 100%;
         position: fixed;
         left: 0;
@@ -99,6 +99,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         font-family: Corbel, Helvetica, sans-serif;
+        padding-left: 200px;
+        padding-right: 200px;
+        position: static;
     }
     .login_card
     {
@@ -109,8 +112,6 @@
     .blue
     {
         color: white;
-        /* border-top-left-radius: 5px;
-        border-bottom-right-radius: 5px; */
         background: rgb(0,49,66) url(Assets/iPhoneMockup.png) no-repeat bottom center;
         background-size: auto 100%;
         text-align: center;
@@ -132,8 +133,6 @@
     {
         background-color: white;
         border: 1px solid rgb(153, 152, 152);
-        /* border-bottom-right-radius: 5px;
-        border-top-right-radius: 5px; */
         width: 60%;
         padding: 50px;
         padding-top: 5px;
