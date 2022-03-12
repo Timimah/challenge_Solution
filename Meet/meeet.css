@@ -1,0 +1,467 @@
+*
+{
+    box-sizing: border-box;
+    font-family: Candara;
+}
+
+body
+{
+    background-color: #013243;
+    position: absolute;
+}
+
+.header
+{
+    background: url(assets/Logo.svg) no-repeat;
+    position: sticky;
+}
+
+.container
+{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+}
+
+/* Mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 480px)
+{
+    .header
+    {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .avatar_1
+    {
+        background: url(./assets/User\ Avatar\ 3.svg) no-repeat;
+        padding: 70px;
+        position: relative;
+        top: 6rem;
+        left: 2.8rem;
+    }
+
+    .avatar_2
+    {
+        background: url(./assets/User\ Avatar\ 2.svg) no-repeat;
+        padding: 100px;
+        position: relative;
+        top: -4rem;
+        left: 14rem;
+    }
+
+    .avatar_3
+    {
+        background: url(./assets/User\ Avatar\ 4.svg) no-repeat;
+        padding: 130px;
+        position: relative;
+        top: 8rem;
+        left: 12rem;
+    }
+
+    .text
+    {
+        margin: 5%;
+        margin-top: 7.6rem;
+    }
+
+    .text h1
+    {
+        color: #32f5c8;
+        font-size: 2.9em;
+        letter-spacing: 0.05em;
+    }
+
+    .text p
+    {
+        color: #a9bdc6;
+        font-size: 1.2em;
+    }
+
+    .text input
+    {
+        background-color: #32f5c8;
+        border-radius: 5px;
+        border: transparent;
+        padding: 1em;
+        font-size: 1.3em;
+        font-weight: bolder;
+    }
+
+    .footer
+    {
+        position: fixed;
+        bottom: -1rem;
+        margin-left: 5%;
+    }
+
+    .footer img
+    {
+        position: relative;
+        top: 2rem;
+    }
+
+    .footer p
+    {
+        position: relative;
+        left: 4rem;
+        top: -1.7rem;
+        color: #a9bdc6;
+        font-size: 1.3em;
+    }
+}
+
+/* iPads, Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px)
+{
+    .header
+    {
+        padding: 20px;
+        margin: 30px;
+    }
+
+    .avatar_1
+    {
+        background: url(./assets/User\ Avatar\ 3.svg) no-repeat;
+        padding: 70px;
+        position: relative;
+        top: 5.5rem;
+        left: 2.8rem;
+    }
+
+    .avatar_2
+    {
+        background: url(./assets/User\ Avatar\ 2.svg) no-repeat;
+        padding: 100px;
+        position: relative;
+        top: -7rem;
+        right: -38rem;
+    }
+
+    .avatar_3
+    {
+        background: url(./assets/User\ Avatar\ 1.svg) no-repeat;
+        padding: 60px;
+        position: relative;
+        top: -3.4rem;
+        right: -40rem;
+    }
+
+    .avatar_4
+    {
+        background: url(./assets/User\ Avatar\ 5.svg) no-repeat;
+        padding: 65px;
+        position: relative;
+        top: -16rem;
+        right: -30rem;
+    }
+
+    .avatar_5
+    {
+        background: url(./assets/User\ Avatar\ 3.svg) no-repeat;
+        padding: 70px;
+        position: relative;
+        top: -9rem;
+        right: -37rem;
+    }
+
+    .avatar_6
+    {
+        background: url(./assets/User\ Avatar\ 4.svg) no-repeat;
+        padding: 130px;
+        position: relative;
+        top: -3rem;
+        right: -30rem;
+    }
+
+    .text
+    {
+        margin: 5%;
+        margin-top: 13rem;
+    }
+
+    .text h1
+    {
+        color: #32f5c8;
+        font-size: 4.8em;
+        letter-spacing: 0.05em;
+    }
+
+    .text p
+    {
+        color: #a9bdc6;
+        font-size: 2em;
+    }
+
+    .text input
+    {
+        background-color: #32f5c8;
+        border-radius: 5px;
+        border: transparent;
+        padding: 1em;
+        font-size: 2em;
+        font-weight: bolder;
+        color: #013243;
+    }
+
+    .footer
+    {
+        position: relative;
+        bottom: -9.5rem;
+        margin-left: 5.2%;
+    }
+
+    .footer img
+    {
+        position: relative;
+        top: 2rem;
+    }
+
+    .footer p
+    {
+        position: relative;
+        left: 4rem;
+        top: -3rem;
+        color: #a9bdc6;
+        font-size: 2em;
+    }
+}
+
+/* Small screens, Laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1024px)
+{
+    .header
+    {
+        padding: 20px;
+        margin-top: 5%;
+        margin-left: 11%;
+    }
+
+    .avatar_1
+    {
+        background: url(./assets/User\ Avatar\ 3.svg) no-repeat;
+        padding: 70px;
+        position: relative;
+        top: 5.5rem;
+        left: 2.8rem;
+    }
+
+    .avatar_2
+    {
+        background: url(./assets/User\ Avatar\ 2.svg) no-repeat;
+        padding: 100px;
+        position: relative;
+        top: -4rem;
+        right: -46rem;
+    }
+
+    .avatar_3
+    {
+        background: url(./assets/User\ Avatar\ 1.svg) no-repeat;
+        padding: 60px;
+        position: relative;
+        top: 20rem;
+        right: -48rem;
+    }
+
+    .avatar_4
+    {
+        background: url(./assets/User\ Avatar\ 5.svg) no-repeat;
+        padding: 65px;
+        position: relative;
+        top: -20rem;
+        right: -34rem;
+    }
+
+    .avatar_5
+    {
+        background: url(./assets/User\ Avatar\ 3.svg) no-repeat;
+        padding: 70px;
+        position: relative;
+        top: 5rem;
+        right: -27rem;
+    }
+
+    .avatar_6
+    {
+        background: url(./assets/User\ Avatar\ 4.svg) no-repeat;
+        padding: 130px;
+        position: relative;
+        bottom: -20rem;
+        right: -40rem;
+    }
+
+    .text
+    {
+        margin-left: 12%;
+        margin-top: -2rem;
+    }
+
+    .text h1
+    {
+        color: #32f5c8;
+        font-size: 6.5em;
+        letter-spacing: 0.05em;
+    }
+
+    .text p
+    {
+        color: #a9bdc6;
+        font-size: 2em;
+    }
+
+    .text input
+    {
+        background-color: #32f5c8;
+        border-radius: 5px;
+        border: transparent;
+        padding: 1em;
+        font-size: 2em;
+        font-weight: bolder;
+        color: #013243;
+    }
+
+    .footer
+    {
+        position: relative;
+        bottom: -30rem;
+        margin-left: 5.2%;
+    }
+
+    .footer img
+    {
+        position: relative;
+        top: 2rem;
+    }
+
+    .footer p
+    {
+        position: relative;
+        left: 4rem;
+        top: -3rem;
+        color: #a9bdc6;
+        font-size: 2em;
+    }
+}
+
+/* Desktops, Large screens, Extra large Screens */
+@media only screen and (min-width: 1025px)
+{
+    .header
+    {
+        padding: 20px;
+        margin-top: 5%;
+        margin-left: 15%;
+    }
+
+    .avatar_1
+    {
+        background: url(./assets/User\ Avatar\ 3.svg) no-repeat;
+        padding: 70px;
+        position: relative;
+        top: 5.5rem;
+        left: 5rem;
+    }
+
+    .avatar_2
+    {
+        background: url(./assets/User\ Avatar\ 2.svg) no-repeat;
+        padding: 100px;
+        position: relative;
+        top: -4rem;
+        right: -56rem;
+    }
+
+    .avatar_3
+    {
+        background: url(./assets/User\ Avatar\ 1.svg) no-repeat;
+        padding: 60px;
+        position: relative;
+        top: 8rem;
+        right: -58rem;
+    }
+
+    .avatar_4
+    {
+        background: url(./assets/User\ Avatar\ 5.svg) no-repeat;
+        padding: 65px;
+        position: relative;
+        top: -16rem;
+        right: -34rem;
+    }
+
+    .avatar_5
+    {
+        background: url(./assets/User\ Avatar\ 3.svg) no-repeat;
+        padding: 70px;
+        position: relative;
+        top: 5rem;
+        right: -37rem;
+    }
+
+    .avatar_6
+    {
+        background: url(./assets/User\ Avatar\ 4.svg) no-repeat;
+        padding: 130px;
+        position: relative;
+        bottom: -20rem;
+        right: -40rem;
+    }
+
+    .text
+    {
+        margin-left: 15%;
+        margin-top: -2rem;
+    }
+
+    .text h1
+    {
+        color: #32f5c8;
+        font-size: 6em;
+        letter-spacing: 0.05em;
+    }
+
+    .text p
+    {
+        color: #a9bdc6;
+        font-size: 2em;
+    }
+
+    .text input
+    {
+        background-color: #32f5c8;
+        border-radius: 5px;
+        border: transparent;
+        padding: 1em;
+        font-size: 2em;
+        font-weight: bolder;
+        color: #013243;
+    }
+
+    .footer
+    {
+        position: relative;
+        bottom: -30rem;
+        margin-left: 15%;
+    }
+
+    .footer img
+    {
+        position: relative;
+        top: 2rem;
+    }
+
+    .footer p
+    {
+        position: relative;
+        left: 4rem;
+        top: -3rem;
+        color: #a9bdc6;
+        font-size: 2em;
+    }
+}
+    
