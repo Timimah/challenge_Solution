@@ -7,7 +7,7 @@
 body
 {
     background-color: #013243;
-    position: absolute;
+    position: fixed;
 }
 
 .header
@@ -20,11 +20,17 @@ body
 {
     display: inline-block;
     position: fixed;
+    width: fit-contents;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -10;
+}
+
+a
+{
+    text-decoration: none;
 }
 
 /* Mobile devices */
@@ -181,20 +187,20 @@ body
     .text
     {
         margin: 5%;
-        margin-top: 13rem;
+        margin-top: 8rem;
     }
 
     .text h1
     {
         color: #32f5c8;
-        font-size: 4.8em;
+        font-size: 4em;
         letter-spacing: 0.05em;
     }
 
     .text p
     {
         color: #a9bdc6;
-        font-size: 2em;
+        font-size: 1.4em;
     }
 
     .text input
@@ -203,7 +209,7 @@ body
         border-radius: 5px;
         border: transparent;
         padding: 1em;
-        font-size: 2em;
+        font-size: 1.4em;
         font-weight: bolder;
         color: #013243;
     }
@@ -232,7 +238,7 @@ body
 }
 
 /* Small screens, Laptops*/
-@media only screen and (min-width: 769px) and (max-width: 1024px)
+@media only screen and (min-width: 769px) and (max-width: 1023px)
 {
     .header
     {
@@ -246,8 +252,8 @@ body
         background: url(./assets/User\ Avatar\ 3.svg) no-repeat;
         padding: 70px;
         position: relative;
-        top: 5.5rem;
-        left: 2.8rem;
+        top: 7.8rem;
+        left: 3rem;
     }
 
     .avatar_2
@@ -255,8 +261,8 @@ body
         background: url(./assets/User\ Avatar\ 2.svg) no-repeat;
         padding: 100px;
         position: relative;
-        top: -4rem;
-        right: -46rem;
+        top: -2.8rem;
+        right: -41rem;
     }
 
     .avatar_3
@@ -264,8 +270,8 @@ body
         background: url(./assets/User\ Avatar\ 1.svg) no-repeat;
         padding: 60px;
         position: relative;
-        top: 20rem;
-        right: -48rem;
+        top: 4rem;
+        right: -38rem;
     }
 
     .avatar_4
@@ -273,8 +279,8 @@ body
         background: url(./assets/User\ Avatar\ 5.svg) no-repeat;
         padding: 65px;
         position: relative;
-        top: -20rem;
-        right: -34rem;
+        top: -16rem;
+        right: -28rem;
     }
 
     .avatar_5
@@ -282,7 +288,7 @@ body
         background: url(./assets/User\ Avatar\ 3.svg) no-repeat;
         padding: 70px;
         position: relative;
-        top: 5rem;
+        top: -1rem;
         right: -27rem;
     }
 
@@ -291,27 +297,27 @@ body
         background: url(./assets/User\ Avatar\ 4.svg) no-repeat;
         padding: 130px;
         position: relative;
-        bottom: -20rem;
-        right: -40rem;
+        top: 10rem;
+        left: 30rem;
     }
 
     .text
     {
         margin-left: 12%;
-        margin-top: -2rem;
+        margin-top: 8rem;
     }
 
     .text h1
     {
         color: #32f5c8;
-        font-size: 6.5em;
+        font-size: 5em;
         letter-spacing: 0.05em;
     }
 
     .text p
     {
         color: #a9bdc6;
-        font-size: 2em;
+        font-size: 1.4em;
     }
 
     .text input
@@ -320,7 +326,7 @@ body
         border-radius: 5px;
         border: transparent;
         padding: 1em;
-        font-size: 2em;
+        font-size: 1.4em;
         font-weight: bolder;
         color: #013243;
     }
@@ -328,7 +334,7 @@ body
     .footer
     {
         position: relative;
-        bottom: -30rem;
+        bottom: -28rem;
         margin-left: 5.2%;
     }
 
@@ -349,13 +355,13 @@ body
 }
 
 /* Desktops, Large screens, Extra large Screens */
-@media only screen and (min-width: 1025px)
+@media only screen and (min-width: 1024px)
 {
     .header
     {
         padding: 20px;
         margin-top: 5%;
-        margin-left: 15%;
+        margin-left: 14%;
     }
 
     .avatar_1
@@ -363,7 +369,7 @@ body
         background: url(./assets/User\ Avatar\ 3.svg) no-repeat;
         padding: 70px;
         position: relative;
-        top: 5.5rem;
+        top: 7.5rem;
         left: 5rem;
     }
 
@@ -373,7 +379,7 @@ body
         padding: 100px;
         position: relative;
         top: -4rem;
-        right: -56rem;
+        right: -64rem;
     }
 
     .avatar_3
@@ -381,8 +387,8 @@ body
         background: url(./assets/User\ Avatar\ 1.svg) no-repeat;
         padding: 60px;
         position: relative;
-        top: 8rem;
-        right: -58rem;
+        bottom: -2rem;
+        right: -46rem;
     }
 
     .avatar_4
@@ -390,8 +396,8 @@ body
         background: url(./assets/User\ Avatar\ 5.svg) no-repeat;
         padding: 65px;
         position: relative;
-        top: -16rem;
-        right: -34rem;
+        top: -18rem;
+        right: -37rem;
     }
 
     .avatar_5
@@ -399,8 +405,8 @@ body
         background: url(./assets/User\ Avatar\ 3.svg) no-repeat;
         padding: 70px;
         position: relative;
-        top: 5rem;
-        right: -37rem;
+        bottom: 18rem;
+        right: -59rem;
     }
 
     .avatar_6
@@ -408,27 +414,28 @@ body
         background: url(./assets/User\ Avatar\ 4.svg) no-repeat;
         padding: 130px;
         position: relative;
-        bottom: -20rem;
-        right: -40rem;
+        bottom: 18rem;
+        right: -55rem;
     }
 
     .text
     {
-        margin-left: 15%;
-        margin-top: -2rem;
+        margin-left: 14%;
+        margin-top: 4rem;
     }
 
     .text h1
     {
         color: #32f5c8;
-        font-size: 6em;
+        font-size: 5em;
         letter-spacing: 0.05em;
+        margin-bottom: 0;
     }
 
     .text p
     {
         color: #a9bdc6;
-        font-size: 2em;
+        font-size: 1.4em;
     }
 
     .text input
@@ -437,7 +444,7 @@ body
         border-radius: 5px;
         border: transparent;
         padding: 1em;
-        font-size: 2em;
+        font-size: 1.4em;
         font-weight: bolder;
         color: #013243;
     }
@@ -445,7 +452,7 @@ body
     .footer
     {
         position: relative;
-        bottom: -30rem;
+        bottom: -5rem;
         margin-left: 15%;
     }
 
