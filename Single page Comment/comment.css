@@ -9,7 +9,253 @@ body
     font-family: Candara, Corbel, 'Gill Sans MT', sans-serif;
 }
 
-.body-con
+/* Mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+.body-con {
+    background: linear-gradient(to bottom, rgba(255, 199, 142, 1), rgba(255, 156, 133, 1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: fit-content;
+}
+
+.com-card {
+    background-color: white;
+    border-radius: 0.3em;
+    height: 50em;
+    width: 22em;
+    margin-top: 8em;
+    margin-bottom: 8em;
+}
+
+.m-thread {
+    position: relative;
+    bottom: 9em;
+    left: 1.2em;
+    top: 2.5em;
+    width: 20em;
+    height: 33.9em; 
+    background-color: rgb(188, 210, 230);
+}
+    
+.m-thread .vtl {
+    height: 29.4em;
+    left: -8em;
+}
+
+.m-text {
+    position: relative;
+    top: -37.6em;
+    left: 2em;
+    padding: 1em;
+    margin: 1.5em;
+    width: 16.5em;
+    background-color: yellowgreen;
+}
+
+.s-thread {
+    background-color: aqua;
+    position: relative;
+    bottom: 39.1em;
+    left: 4em;
+    height: 23em;
+    width: 16em;
+}
+
+.s-thread .vtl {
+    height: 18.5em;
+    left: -6em;
+}
+
+.s-text {
+    position: relative;
+    top: -26.7em;
+    left: 2em;
+    padding: 1em;
+    margin: 1.5em;
+    width: 12.5em;
+    background-color: blueviolet;
+}
+
+.ss-thread {
+    background-color: rgb(8, 87, 61);
+    position: relative;
+    bottom: 28.2em;
+    left: 4em;
+    height: 11em;
+    width: 12em;
+}
+
+.ss-thread .vtl {
+    height: 6.5em;
+    left: -4em;
+}
+
+.ss-text {
+    position: relative;
+    top: -14.5em;
+    left: 2em;
+    padding: 1em;
+    margin: 1.5em;
+    width: 8.5em;
+    /* background-color: rgb(177, 177, 72); */
+}
+
+.m2-thread {
+    position: relative;
+    left: 1.2em;
+    top: 5.5em;
+    width: 20em;
+    height: 6.4em; 
+    background-color: rgb(188, 210, 230);
+}
+
+.m2-thread .vtl
+{
+    height: 1.9em;
+    left: -8em;
+}
+
+.m2-text {
+    position: relative;
+    top: -9.7em;
+    left: 2em;
+    width: 16.5em;
+    padding: 10px;
+    margin: 1.5em;
+    /* background-color: rgb(157, 157, 27); */
+}
+}
+
+/* iPads, Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* .body-con {
+        background: linear-gradient(to bottom, rgba(255, 199, 142, 1), rgba(255, 156, 133, 1));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: fit-content;
+    }
+    
+    .com-card {
+        background-color: white;
+        border-radius: 0.3em;
+        height: 50em;
+        width: 22em;
+        margin-top: 8em;
+        margin-bottom: 8em;
+    }
+    
+    .m-thread {
+        position: relative;
+        bottom: 9em;
+        left: 1.2em;
+        top: 2.5em;
+        width: 20em;
+        height: 33.9em; 
+        background-color: rgb(188, 210, 230);
+    }
+        
+    .m-thread .vtl {
+        height: 29.4em;
+        left: -8em;
+    }
+    
+    .m-text {
+        position: relative;
+        top: -37.6em;
+        left: 2em;
+        padding: 1em;
+        margin: 1.5em;
+        width: 16.5em;
+        background-color: yellowgreen;
+    }
+    
+    .s-thread {
+        background-color: aqua;
+        position: relative;
+        bottom: 39.1em;
+        left: 4em;
+        height: 23em;
+        width: 16em;
+    }
+    
+    .s-thread .vtl {
+        height: 18.5em;
+        left: -6em;
+    }
+    
+    .s-text {
+        position: relative;
+        top: -26.7em;
+        left: 2em;
+        padding: 1em;
+        margin: 1.5em;
+        width: 12.5em;
+        background-color: blueviolet;
+    }
+    
+    .ss-thread {
+        background-color: rgb(8, 87, 61);
+        position: relative;
+        bottom: 28.2em;
+        left: 4em;
+        height: 11em;
+        width: 12em;
+    }
+    
+    .ss-thread .vtl {
+        height: 6.5em;
+        left: -4em;
+    }
+    
+    .ss-text {
+        position: relative;
+        top: -14.5em;
+        left: 2em;
+        padding: 1em;
+        margin: 1.5em;
+        width: 8.5em;
+        /* background-color: rgb(177, 177, 72); */
+    }
+    
+    .m2-thread {
+        position: relative;
+        left: 1.2em;
+        top: 5.5em;
+        width: 20em;
+        height: 6.4em; 
+        background-color: rgb(188, 210, 230);
+    }
+    
+    .m2-thread .vtl
+    {
+        height: 1.9em;
+        left: -8em;
+    }
+    
+    .m2-text {
+        position: relative;
+        top: -9.7em;
+        left: 2em;
+        width: 16.5em;
+        padding: 10px;
+        margin: 1.5em;
+        /* background-color: rgb(157, 157, 27); */
+    } */
+}
+
+/* .body-con
 {
     background:conic-gradient(from 90deg at 50% 50%, rgba(255, 204, 236, 1) 0%, rgba(255, 204, 236, 1) 4%, rgba(255, 156, 133, 1) 35%, rgba(255, 156, 133, 1) 49%, rgba(255, 199, 142, 1) 51%, rgba(255, 199, 142, 1) 70%, rgba(149, 148, 255, 1) 97%, rgba(149, 148, 255, 1) 98%, rgba(255, 204, 236, 1) 100%) no-repeat;
     display: flex;
@@ -20,19 +266,12 @@ body
     right: 0;
     top: 0;
     bottom: 0;
-}
+} */
 
 img
 {
     width: 60px;
     height: 60px;
-}
-
-a
-{
-    text-decoration: none;
-    color: black;
-    margin-left: 1.2em;
 }
 
 button
@@ -41,18 +280,18 @@ button
     background: transparent;
 }
 
-.com-card
+/* .com-card
 {
     background-color: white;
     border-radius: 0.3em;
     height: 36em;
     width: 50em;
-}
+} */
 
-div
+/* div
 {
     display: inline-block;
-}
+} */
 
 .vtl
 {
@@ -81,6 +320,7 @@ div
 .reaction button
 {
     margin-top: 1.3em;
+    /* padding: 1em; */
 }
 
 .upvote
@@ -97,7 +337,7 @@ div
     height: 1em;
 }
 
-.m-thread
+/* .m-thread
 {
     position: relative;
     bottom: 9em;
@@ -105,65 +345,65 @@ div
     top: 2em;
     width: 44em;
     word-wrap: break-word;
-    height: 23.4em;
+    height: 23.4em; */
     /* background-color: rgb(188, 210, 230); */
-}
+/* } */
 
-.m-thread .vtl
+/* .m-thread .vtl
 {
     height: 18.9em;
     left: -20em;
-}
+} */
 
-.m-text
+/* .m-text
 {
     position: relative;
     top: -27.8em;
     left: 3em;
     padding: 20px;
     margin: 1.5em;
-    width: 39.5em;
+    width: 39.5em; */
     /* background-color: yellowgreen; */
-}
+/* } */
 
-.s-thread
-{
+/* .s-thread
+{ */
     /* background-color: aqua; */
-    position: relative;
+    /* position: relative;
     bottom: 29.4em;
     left: 4em;
     height: 14.9em;
     width: 40em;
-}
+} */
 
-.s-thread .vtl
+/* .s-thread .vtl
 {
     height: 10.5em;
     left: -18em;
-}
+} */
 
-.s-text
+/* .s-text
 {
     position: relative;
     top: -17.8em;
     left: 4.5em;
     padding: 20px;
     margin: 0.01em;
-    width: 35.5em;
+    width: 35.5em; */
     /* background-color: blueviolet; */
-}
+/* } */
 
-.ss-thread
-{
+/* .ss-thread */
+/* { */
     /* background-color: rgb(8, 87, 61); */
-    position: relative;
+    /* position: relative;
     bottom: 17.9em;
     left: 4em;
     height: 6.5em;
     width: 36em;
-}
+} */
 
-.ss-thread .vtl
+/* .ss-thread .vtl
 {
     height: 2em;
     left: -16em;
@@ -176,14 +416,14 @@ div
     left: 4.5em;
     width: 31.4em;
     padding: 20px;
-    margin: 0.1em;
+    margin: 0.1em; */
     /* background-color: rgb(177, 177, 72); */
-}
+/* } */
 
-.m2-thread
-{
+/* .m2-thread
+{ */
     /* background-color: rgb(87, 77, 77); */
-    position: absolute;
+    /* position: absolute;
     bottom: 4.5em;
     left: 21.9em;
     height: 6.3em;
@@ -194,15 +434,28 @@ div
 {
     height: 1.8em;
     left: -20em;
-}
+} */
 
-.m2-text
+/* .m2-text
 {
     position: relative;
     top: -9.2em;
     left: 4.5em;
     width: 39.4em;
     padding: 20px;
-    margin: 0.1em;
+    margin: 0.1em; */
     /* background-color: rgb(157, 157, 27); */
+/* } */
+
+
+/* Small screens, Laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1023px)
+{
+
+}
+
+/* Desktops, Large screens, Extra large Screens */
+@media only screen and (min-width: 1024px)
+{
+
 }
