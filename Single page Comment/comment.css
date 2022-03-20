@@ -69,6 +69,77 @@ a:active {
     height: 1em;
 }
 
+/* Very small screens */
+@media only screen and (max-width : 329px) {
+    .body-con {
+        background: linear-gradient(to bottom, rgba(255, 199, 142, 1), rgba(255, 156, 133, 1));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: fit-content;
+    }
+
+    .com-card {
+        margin-left: 1.5em;
+        margin-top: 3em;
+    }
+
+    .m-text {
+        position: relative;
+        top: -11.6em;
+        left: 4.5em;
+        width: 60%;
+    }
+
+    .vtl {
+        border: 1px solid rgb(40, 40, 40);
+        height: 6.99em;
+        left: -7.3em;
+    }
+
+    .s-thread {
+        margin-top: -8em;
+    }
+    
+    .s-text {
+        position: relative;
+        top: -11.6em;
+        left: 4.5em;
+        width: 60%;
+    }
+
+    .ss-thread {
+        margin-top: -8em;
+    }
+
+    .ss-thread .vtl {
+        height: 2.4em;
+    }
+
+    .ss-text {
+        position: relative;
+        top: -7em;
+        left: 4.5em;
+        width: 60%;
+    }
+
+    .m2-text {
+        position: relative;
+        top: -8.2em;
+        left: 4.5em;
+        width: 60%;
+    }
+
+    .m2-thread .vtl {
+        height: 3.5em;
+    }
+}
+
 /* Mobile devices */
 @media only screen and (min-width: 330px) and (max-width: 480px) {
     .body-con {
@@ -165,18 +236,18 @@ a:active {
         left: 1.2em;
         top: 5em;
         width: 19.8em;
-        height: 6.4em; 
+        height: 6.8em; 
     }
 
     .m2-thread .vtl
     {
-        height: 1.9em;
+        height: 2.3em;
         left: -8em;
     }
 
     .m2-text {
         position: relative;
-        top: -9.7em;
+        top: -10em;
         left: 2em;
         width: 16.5em;
         padding: 10px;
@@ -278,17 +349,17 @@ a:active {
         left: 1.2em;
         top: 5em;
         width: 30.7em;
-        height: 5.4em; 
+        height: 7em;
     }
         
     .m2-thread .vtl {
-        height: 0.9em;
+        height: 2.5em;
         left: -13.5em;
     }
         
     .m2-text {
         position: relative;
-        top: -8.7em;
+        top: -10.2em;
         left: 2em;
         width: 16.5em;
         padding: 10px;
@@ -393,17 +464,17 @@ a:active {
         left: 2.2em;
         top: 5em;
         width: 35.8em;
-        height: 5.4em; 
+        height: 6.8em;
     }
         
     .m2-thread .vtl {
-        height: 0.9em;
+        height: 2.2em;
         left: -16em;
     }
         
     .m2-text {
         position: relative;
-        top: -8.7em;
+        top: -9.9em;
         left: 2em;
         width: 16.5em;
         padding: 10px;
@@ -506,17 +577,17 @@ a:active {
         left: 2.2em;
         top: 5em;
         width: 39.8em;
-        height: 5.4em; 
+        height: 6.8em;
     }
         
     .m2-thread .vtl {
-        height: 0.9em;
+        height: 2.3em;
         left: -18em;
     }
         
     .m2-text {
         position: relative;
-        top: -8.7em;
+        top: -10.1em;
         left: 2em;
         width: 16.5em;
         padding: 10px;
