@@ -1,16 +1,76 @@
-*
-{
+* {
     box-sizing: border-box;    
 }
 
-body
-{
+body {
     font-size: 100%;
     font-family: Candara, Corbel, 'Gill Sans MT', sans-serif;
 }
 
+img {
+    width: 60px;
+    height: 60px;
+}
+
+button {
+    border: transparent;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+span {
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+a:hover {
+    color: rgba(255, 199, 142, 1);
+}
+
+a:active {
+    color: rgba(255, 156, 133, 1);
+}
+
+.vtl {
+    border: none;
+    border-left: 1px solid rgb(170, 170, 170);
+    width: 0;
+    position: relative;
+}
+
+.u-name {
+    font-weight: bolder;
+    color: black;
+}
+
+.mt-comment, .st-comment, .sst-comment, .mt2-comment {
+    color: grey;
+}
+
+.reaction {
+   display: inline;
+}
+
+.upvote {
+    background: url(./assets/Up.svg) no-repeat;
+    width: 1em;
+    height: 1em;
+}
+
+.downvote {
+    background: url(./assets/Down.svg) no-repeat;
+    width: 1em;
+    height: 1em;
+}
+
 /* Mobile devices */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 330px) and (max-width: 480px) {
 .body-con {
     background: linear-gradient(to bottom, rgba(255, 199, 142, 1), rgba(255, 156, 133, 1));
     display: flex;
@@ -27,8 +87,8 @@ body
 .com-card {
     background-color: white;
     border-radius: 0.3em;
-    height: 50em;
-    width: 22em;
+    height: 46em;
+    width: 21em;
     margin-top: 8em;
     margin-bottom: 8em;
 }
@@ -38,67 +98,67 @@ body
     bottom: 9em;
     left: 1.2em;
     top: 2.5em;
-    width: 20em;
-    height: 33.9em; 
+    width: 19.8em;
+    height: 31.48em; 
     background-color: rgb(188, 210, 230);
 }
     
 .m-thread .vtl {
-    height: 29.4em;
+    height: 26.99em;
     left: -8em;
 }
 
 .m-text {
     position: relative;
-    top: -37.6em;
+    top: -35.2em;
     left: 2em;
     padding: 1em;
     margin: 1.5em;
     width: 16.5em;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
 }
 
 .s-thread {
     background-color: aqua;
     position: relative;
-    bottom: 39.1em;
+    bottom: 36.7em;
     left: 4em;
-    height: 23em;
-    width: 16em;
+    height: 21.1em;
+    width: 15.8em;
 }
 
 .s-thread .vtl {
-    height: 18.5em;
+    height: 16.62em;
     left: -6em;
 }
 
 .s-text {
     position: relative;
-    top: -26.7em;
+    top: -24.8em;
     left: 2em;
     padding: 1em;
     margin: 1.5em;
     width: 12.5em;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 .ss-thread {
     background-color: rgb(8, 87, 61);
     position: relative;
-    bottom: 28.2em;
+    bottom: 26.4em;
     left: 4em;
-    height: 11em;
-    width: 12em;
+    height: 9.7em;
+    width: 11.8em;
 }
 
 .ss-thread .vtl {
-    height: 6.5em;
+    height: 5.2em;
     left: -4em;
 }
 
 .ss-text {
     position: relative;
-    top: -14.5em;
+    top: -13.3em;
     left: 2em;
     padding: 1em;
     margin: 1.5em;
@@ -109,8 +169,8 @@ body
 .m2-thread {
     position: relative;
     left: 1.2em;
-    top: 5.5em;
-    width: 20em;
+    top: 5em;
+    width: 19.8em;
     height: 6.4em; 
     background-color: rgb(188, 210, 230);
 }
@@ -134,125 +194,122 @@ body
 
 /* iPads, Tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    /* .body-con {
-        background: linear-gradient(to bottom, rgba(255, 199, 142, 1), rgba(255, 156, 133, 1));
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        height: fit-content;
-    }
+.body-con {
+    background: linear-gradient(to bottom, rgba(255, 199, 142, 1), rgba(255, 156, 133, 1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
     
-    .com-card {
-        background-color: white;
-        border-radius: 0.3em;
-        height: 50em;
-        width: 22em;
-        margin-top: 8em;
-        margin-bottom: 8em;
-    }
+.com-card {
+    background-color: white;
+    border-radius: 0.3em;
+    height: 38em;
+    width: 31.9em;
+}
     
-    .m-thread {
-        position: relative;
-        bottom: 9em;
-        left: 1.2em;
-        top: 2.5em;
-        width: 20em;
-        height: 33.9em; 
-        background-color: rgb(188, 210, 230);
-    }
+.m-thread {
+    position: relative;
+    bottom: 9em;
+    left: 1.2em;
+    top: 2.5em;
+    width: 30.7em;
+    height: 23.7em; 
+    background-color: rgb(188, 210, 230);
+}
         
-    .m-thread .vtl {
-        height: 29.4em;
-        left: -8em;
-    }
+.m-thread .vtl {
+    height: 19.2em;
+    left: -13.5em;
+}
     
-    .m-text {
-        position: relative;
-        top: -37.6em;
-        left: 2em;
-        padding: 1em;
-        margin: 1.5em;
-        width: 16.5em;
-        background-color: yellowgreen;
-    }
+.m-text {
+    position: relative;
+    top: -27.4em;
+    left: 2em;
+    padding: 1em;
+    margin: 1.5em;
+    width: 27.15em;
+    background-color: yellowgreen;
+}
     
-    .s-thread {
-        background-color: aqua;
-        position: relative;
-        bottom: 39.1em;
-        left: 4em;
-        height: 23em;
-        width: 16em;
-    }
+.s-thread {
+    background-color: aqua;
+    position: relative;
+    bottom: 28.9em;
+    left: 4em;
+    height: 14.6em;
+    width: 26.5em;
+}
     
-    .s-thread .vtl {
-        height: 18.5em;
-        left: -6em;
-    }
+.s-thread .vtl {
+    height: 10.1em;
+    left: -11.3em;
+}
     
-    .s-text {
-        position: relative;
-        top: -26.7em;
-        left: 2em;
-        padding: 1em;
-        margin: 1.5em;
-        width: 12.5em;
-        background-color: blueviolet;
-    }
-    
+.s-text {
+    position: relative;
+    top: -18.4em;
+    left: 2em;
+    padding: 1em;
+    margin: 1.5em;
+    width: 23.2em;
+    /* background-color: blueviolet; */
+}
+
     .ss-thread {
-        background-color: rgb(8, 87, 61);
-        position: relative;
-        bottom: 28.2em;
-        left: 4em;
-        height: 11em;
-        width: 12em;
-    }
+    background-color: rgb(8, 87, 61);
+    position: relative;
+    bottom: 19.82em;
+    left: 4em;
+    height: 5.5em;
+    width: 22.7em;
+}
+
+.ss-thread .vtl {
+    height: 1em;
+    left: -9.5em;
+}
+
+.ss-text {
+    position: relative;
+    top: -9.2em;
+    left: 2em;
+    padding: 1em;
+    margin: 1.5em;
+    width: 19.2em;
+    /* background-color: rgb(177, 177, 72); */
+}
+
+.m2-thread {
+    position: relative;
+    left: 1.2em;
+    top: 5em;
+    width: 30.7em;
+    height: 5.4em; 
+    background-color: rgb(188, 210, 230);
+}
     
-    .ss-thread .vtl {
-        height: 6.5em;
-        left: -4em;
-    }
+.m2-thread .vtl {
+    height: 0.9em;
+    left: -13.5em;
+}
     
-    .ss-text {
-        position: relative;
-        top: -14.5em;
-        left: 2em;
-        padding: 1em;
-        margin: 1.5em;
-        width: 8.5em;
-        /* background-color: rgb(177, 177, 72); */
-    }
-    
-    .m2-thread {
-        position: relative;
-        left: 1.2em;
-        top: 5.5em;
-        width: 20em;
-        height: 6.4em; 
-        background-color: rgb(188, 210, 230);
-    }
-    
-    .m2-thread .vtl
-    {
-        height: 1.9em;
-        left: -8em;
-    }
-    
-    .m2-text {
-        position: relative;
-        top: -9.7em;
-        left: 2em;
-        width: 16.5em;
-        padding: 10px;
-        margin: 1.5em;
-        /* background-color: rgb(157, 157, 27); */
-    } */
+.m2-text {
+    position: relative;
+    top: -8.7em;
+    left: 2em;
+    width: 16.5em;
+    padding: 10px;
+    margin: 1.5em;
+    /* background-color: rgb(157, 157, 27); */
+}
 }
 
 /* .body-con
@@ -268,17 +325,9 @@ body
     bottom: 0;
 } */
 
-img
-{
-    width: 60px;
-    height: 60px;
-}
 
-button
-{
-    border: transparent;
-    background: transparent;
-}
+
+
 
 /* .com-card
 {
@@ -293,49 +342,9 @@ button
     display: inline-block;
 } */
 
-.vtl
-{
-    border: none;
-    border-left: 1px solid rgb(170, 170, 170);
-    width: 0;
-    position: relative;
-}
 
-.u-name
-{
-    font-weight: bolder;
-    color: black;
-}
 
-.mt-comment, .st-comment, .sst-comment, .mt2-comment
-{
-    color: grey;
-}
 
-.reaction
-{
-    display: inline;
-}
-
-.reaction button
-{
-    margin-top: 1.3em;
-    /* padding: 1em; */
-}
-
-.upvote
-{
-    background: url(./assets/Up.svg) no-repeat;
-    width: 1em;
-    height: 1em;
-}
-
-.downvote
-{
-    background: url(./assets/Down.svg) no-repeat;
-    width: 1em;
-    height: 1em;
-}
 
 /* .m-thread
 {
