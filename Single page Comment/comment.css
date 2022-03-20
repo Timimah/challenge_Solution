@@ -298,7 +298,7 @@ a:active {
 
 
 /* Small screens, Laptops*/
-@media only screen and (min-width: 769px) and (max-width: 1023px) {
+@media only screen and (min-width: 769px) and (max-width: 1390px) {
     .body-con {
         background:conic-gradient(from 90deg at 50% 50%, rgba(255, 204, 236, 1) 0%, rgba(255, 204, 236, 1) 4%, rgba(255, 156, 133, 1) 35%, rgba(255, 156, 133, 1) 49%, rgba(255, 199, 142, 1) 51%, rgba(255, 199, 142, 1) 70%, rgba(149, 148, 255, 1) 97%, rgba(149, 148, 255, 1) 98%, rgba(255, 204, 236, 1) 100%) no-repeat;
         display: flex;
@@ -309,8 +309,7 @@ a:active {
         right: 0;
         top: 0;
         bottom: 0;
-        height: fit-content;
-        /* font-size: smaller; */
+        height: 100%;
     }
         
     .com-card {
@@ -318,8 +317,8 @@ a:active {
         border-radius: 0.3em;
         height: 34em;
         width: 38em;
-        margin-top: 6em;
-        margin-bottom: 6em;
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
         
     .m-thread {
@@ -329,7 +328,6 @@ a:active {
         top: 2.5em;
         width: 35.8em;
         height: 21.4em; 
-        background-color: rgb(188, 210, 230);
     }
             
     .m-thread .vtl {
@@ -344,11 +342,9 @@ a:active {
         padding: 1em;
         margin: 1.5em;
         width: 32.3em;
-        background-color: yellowgreen;
     }
         
     .s-thread {
-        background-color: aqua;
         position: relative;
         bottom: 26.6em;
         left: 4em;
@@ -368,21 +364,19 @@ a:active {
         padding: 1em;
         margin: 1.5em;
         width: 28.3em;
-        background-color: blueviolet;
     }
 
-        .ss-thread {
-        background-color: rgb(8, 87, 61);
+    .ss-thread {
         position: relative;
         bottom: 18.7em;
         left: 4em;
         height: 5.5em;
-        width: 22.7em;
+        width: 27.8em;
     }
 
     .ss-thread .vtl {
         height: 1em;
-        left: -9.5em;
+        left: -11.9em;
     }
 
     .ss-text {
@@ -392,7 +386,6 @@ a:active {
         padding: 1em;
         margin: 1.5em;
         width: 19.2em;
-        /* background-color: rgb(177, 177, 72); */
     }
 
     .m2-thread {
@@ -401,7 +394,6 @@ a:active {
         top: 5em;
         width: 35.8em;
         height: 5.4em; 
-        background-color: rgb(188, 210, 230);
     }
         
     .m2-thread .vtl {
@@ -416,12 +408,118 @@ a:active {
         width: 16.5em;
         padding: 10px;
         margin: 1.5em;
-        /* background-color: rgb(157, 157, 27); */
     }
 }
 
 /* Desktops, Large screens, Extra large Screens */
-@media only screen and (min-width: 1024px)
-{
+@media only screen and (min-width: 1400px) {
+    .body-con {
+        background:conic-gradient(from 90deg at 50% 50%, rgba(255, 204, 236, 1) 0%, rgba(255, 204, 236, 1) 4%, rgba(255, 156, 133, 1) 35%, rgba(255, 156, 133, 1) 49%, rgba(255, 199, 142, 1) 51%, rgba(255, 199, 142, 1) 70%, rgba(149, 148, 255, 1) 97%, rgba(149, 148, 255, 1) 98%, rgba(255, 204, 236, 1) 100%) no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
 
+    }
+        
+    .com-card {
+        background-color: white;
+        border-radius: 0.3em;
+        height: 34em;
+        width: 42em;
+    }
+        
+    .m-thread {
+        position: relative;
+        bottom: 9em;
+        left: 2.2em;
+        top: 2.5em;
+        width: 39.8em;
+        height: 21.4em; 
+    }
+            
+    .m-thread .vtl {
+        height: 16.9em;
+        left: -18em;
+    }
+        
+    .m-text {
+        position: relative;
+        top: -25.1em;
+        left: 2em;
+        padding: 1em;
+        margin: 1.5em;
+        width: 36.3em;
+    }
+        
+    .s-thread {
+        position: relative;
+        bottom: 26.6em;
+        left: 4em;
+        height: 13.4em;
+        width: 35.8em;
+    }
+        
+    .s-thread .vtl {
+        height: 8.9em;
+        left: -15.8em;
+    }
+        
+    .s-text {
+        position: relative;
+        top: -17.1em;
+        left: 2em;
+        padding: 1em;
+        margin: 1.5em;
+        width: 32.3em;
+    }
+
+    .ss-thread {
+        position: relative;
+        bottom: 18.7em;
+        left: 4em;
+        height: 5.5em;
+        width: 31.8em;
+    }
+
+    .ss-thread .vtl {
+        height: 1em;
+        left: -13.8em;
+    }
+
+    .ss-text {
+        position: relative;
+        top: -9.2em;
+        left: 2em;
+        padding: 1em;
+        margin: 1.5em;
+        width: 28.3em;
+    }
+
+    .m2-thread {
+        position: relative;
+        left: 2.2em;
+        top: 5em;
+        width: 39.8em;
+        height: 5.4em; 
+    }
+        
+    .m2-thread .vtl {
+        height: 0.9em;
+        left: -18em;
+    }
+        
+    .m2-text {
+        position: relative;
+        top: -8.7em;
+        left: 2em;
+        width: 16.5em;
+        padding: 10px;
+        margin: 1.5em;
+    }
 }
