@@ -8,7 +8,7 @@
 {
     #part1
     {
-        background: rgb(35, 85, 242) url(Assets/Pattern.png) no-repeat;
+        background: rgb(35, 85, 242) url(assets/Pattern.png) no-repeat;
         background-size: cover;
         position: absolute;
         left: 0;
@@ -64,7 +64,7 @@
         font-weight: bold;
         font-size: medium;
         width: 32%;
-        margin-left: 5px
+        margin-left: 5px;
     }
     #spam
     {
@@ -97,9 +97,9 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px)
 {
-        #part1
+    #part1
     {
-        background: rgb(35, 85, 242) url(Assets/Pattern.png) no-repeat;
+        background: rgb(35, 85, 242) url(assets/Pattern.png) no-repeat;
         background-size: cover;
         position: absolute;
         left: 0;
@@ -190,7 +190,7 @@
 {
     body
     {
-        background-image: url(Assets/Background.png);
+        background-image: url(assets/Background.png);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -208,7 +208,7 @@
     }
     #part1
     {
-        background: rgb(35, 85, 242) url(Assets/Pattern.png) no-repeat;
+        background: rgb(35, 85, 242) url(assets/Pattern.png) no-repeat;
         background-attachment: absolute;
         background-size: cover;
         height: 30%;
@@ -299,7 +299,7 @@
 {
     body
     {
-        background-image: url(Assets/Background.png);
+        background-image: url(assets/Background.png);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -317,7 +317,7 @@
     }
     #part1
     {
-        background: rgb(35, 85, 242) url(Assets/Pattern.png) no-repeat;
+        background: rgb(35, 85, 242) url(assets/Pattern.png) no-repeat;
         background-attachment: absolute;
         background-size: cover;
         height: 30%;
@@ -386,19 +386,19 @@
     }
     #avatar
     {
-        margin-left: 100px;
+        margin-left: 75px;
         float: left;
     }
     #avatar p
     {
         float: right;
-        margin-left: 15px;
+        /* margin-left: 10px; */
         margin-top: 0;
     }
     .part_5
     {
         position: absolute;
-        top: 75%;
+        top: 73%;
         text-align: center;
         padding: 30px;
     }
@@ -408,7 +408,7 @@
 {
     body
     {
-        background-image: url(Assets/Background.png);
+        background-image: url(assets/Background.png);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -426,7 +426,7 @@
     }
     #part1
     {
-        background: rgb(35, 85, 242) url(Assets/Pattern.png) no-repeat;
+        background: rgb(35, 85, 242) url(assets/Pattern.png) no-repeat;
         background-attachment: absolute;
         background-size: cover;
         height: 30%;
